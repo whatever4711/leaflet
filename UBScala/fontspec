@@ -1,0 +1,19 @@
+\fontspec
+[Path = /home/marcel/git/Proceedings/UBScala/,
+Extension = .ttf,
+UprightFont = *-Regular,
+BoldFont = *-Bold,
+ItalicFont = *-Italic,
+BoldItalicFont = *-BoldItalic
+]
+{UBScalaSans}
+
+\fontspec
+[Path = /home/marcel/git/Proceedings/UBScala/,
+Extension = .ttf,
+UprightFont = *-Regular,
+BoldFont = *-Bold,
+ItalicFont = *-Italic,
+BoldItalicFont = *-BoldItalic
+]
+{UBScala}
