@@ -104,6 +104,28 @@
 \node[hours,minimum height=.5cm] at (3,15.5) {Closing};
 \end{tikzpicture}
 
+\newpage
+% TimeTables
+
+\newcommand\VertEntry[1]{%
+  \multirow{3}*{%
+    \begin{varwidth}{2em}% --- or minipage, if you prefer a fixed width
+    \centering #1%
+    \end{varwidth}}}
+
+\begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
+\hline
+\rowcolor{unibablueI} \textcolor{white}{\textbf{MON}} & \textcolor{white}{\textbf{Invited Lecture}} & \textcolor{white}{\textbf{Room}}\\
+\hline
+\endhead
+%\firsthline
+%\hline
+\VertEntry{13.15 \qquad\quad $\vert$ \qquad 14.15} & \multicolumn{2}{p{6.5cm}|}{\textbf{S{\o}ren Asmussen}:} \\
+ & \multicolumn{2}{p{6.5cm}|}{Probabilistic analysis of the RESTART protocol and checkpointing in computer reliability} \\
+ \hline
+\end{longtable}
+
+
 \vspace{0.2cm}
 {\large \bf Friday, April 13}
 
