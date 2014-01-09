@@ -95,36 +95,37 @@
 
 % Monday
 \node[hours, minimum height = 7mm, fill=white] (os) at($(1300.west)+(mo.north west)+(0,.5)$) {Opening Session};
-\node[hours, minimum height = 15mm, fill=white] (il1) [below = of os] {Invited Lecture};
+\node[hours, minimum height = 15mm, fill=unibayellowV] (il1) [below = of os] {Invited Lecture\\ S{\o}ren Asmussen};
 \node[hours, minimum height = 7mm, fill=white] (cb1) [below = of il1] {Coffee Break};
-\node[hours, minimum height = 31mm, fill=white] (s1) [below = of cb1] {Session 1};
+\node[hours, minimum height = 31mm, fill=unibablueV] (s1) [below = of cb1] {Session 1};
 \node[hours, minimum height = 15mm, fill=white] (cb2) [below = of s1] {Coffee Break};
-\node[hours, minimum height = 15mm, fill=white] (s2) [below = of cb2] {Session 2};
+\node[hours, minimum height = 15mm, fill=unibablueV] (s2) [below = of cb2] {Session 2};
 % night program
 \node[hhours, minimum height = 23mm, fill=white] (ct1) at($(1730.west)+(mo.north west)+(0,.5)$) {City Tour};
 \node[hhours, minimum height = 15mm, fill=white] (mom) at($(1745.west)+(mo.north west)+(12.5,.5)$) {\tiny MMB Meeting of Members};
 \node[hours, minimum height = 7mm, fill=white] (gt) at($(1900.west)+(mo.north west)+(0,.5)$) {Get-Together};
 
 % Tuesday
-\node[hours, minimum height = 7mm, fill=white] (s3) at($(0900.west)+(tu.north west)+(0,.5)$) {Session 3};
+\node[hours, minimum height = 7mm, fill=unibablueV] (s3) at($(0900.west)+(tu.north west)+(0,.5)$) {Session 3};
 \node[hours, minimum height = 7mm, fill=white] (cb3) [below = of s3] {Coffee Break};
-\node[hours, minimum height = 7mm, fill=white] (s4) [below = of cb3] {Session 4};
+\node[hours, minimum height = 7mm, fill=unibablueV] (s4) [below = of cb3] {Session 4};
 \node[hours, minimum height = 23mm, fill=white] (lb1) [below = of s4] {Lunch Break};
-\node[hours, minimum height = 15mm, fill=white] (il2) [below = of lb1] {Invited Lecture};
+\node[hours, minimum height = 15mm, fill=unibayellowV] (il2) [below = of lb1] {Invited Lecture\\ Jim Roberts};
 \node[hours, minimum height = 15mm, fill=white] (cb4) [below = of il2] {Coffee Break};
-\node[hours, minimum height = 7mm, fill=white] (s5) [below = of cb4] {Session 5};
+\node[hours, minimum height = 7mm, fill=unibablueV] (s5) [below = of cb4] {Session 5};
 \node[hours, minimum height = 15mm, fill=white] (cb5) [below = of s5] {Coffee Break};
-\node[hours, minimum height = 15mm, fill=white] (s6) [below = of cb5] {Session 6};
+\node[hours, minimum height = 15mm, fill=unibagrayV] (s6) [below = of cb5] {Session 6};
 % night program
 \node[hhours, minimum height = 23mm, fill=white] (ct2) at($(1715.west)+(tu.north west)+(0,.5)$) {City Tour};
 \node[hhours, minimum height = 7mm, fill=white] (cb6) at($(1715.west)+(tu.north west)+(12.5,.5)$) {\scriptsize Coffee Break};
 \node[hours, minimum height = 23mm, fill=white] (di) at($(1845.west)+(tu.north west)+(0,.5)$) {Dinner};
 
 % Wednesday
-\node[hhours, minimum height = 31mm, fill=white] (so) at($(0900.west)+(we.north west)+(0,.5)$) {\scriptsize SOCNET 2014};
-\node[hhours, minimum height = 31mm, fill=white] (fg) at($(0900.west)+(we.north west)+(12.5,.5)$) {\scriptsize FGENET 2014};
+%\node[hhours, minimum height = 31mm, fill=white] (so) at($(0900.west)+(we.north west)+(0,.5)$) {\scriptsize SOCNET 2014};
+%\node[hhours, minimum height = 31mm, fill=white] (fg) at($(0900.west)+(we.north west)+(12.5,.5)$) {\scriptsize FGENET 2014};
+\node[hours, minimum height = 31mm, fill=unibagreenV] (so) at($(0900.west)+(we.north west)+(0,.5)$) {\footnotesize Workshops\\[3ex] \footnotesize SOCNET\\[1ex] \footnotesize FGENET\\[1ex] \footnotesize WoNeCa};
 \node[hours, minimum height = 23mm, fill=white] (lb2) at($(1300.west)+(we.north west)+(0,.5)$) {Lunch Break};
-\node[hours, minimum height = 15mm, fill=white] (s7) [below = of lb2] {Session 7};
+\node[hours, minimum height = 15mm, fill=unibablueV] (s7) [below = of lb2] {Session 7};
 \node[hours, minimum height = 7mm, fill=white] (cb7) [below = of s7] {Coffee Break};
 \node[hours, minimum height = 7mm, fill=white] (ma) [below = of cb7] {MMB Awards};
 \node[hours, minimum height = 15mm, fill=white] (cs) [below = of ma] {Closing Session};
@@ -143,7 +144,7 @@
 
 \begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
 \hline
-\rowcolor{unibablueI} \textcolor{white}{\textbf{MON}} & \textcolor{white}{\textbf{Invited Lecture}} & \textcolor{white}{\textbf{Room}}\\
+\rowcolor{unibayellowV} \textcolor{unibablueI}{\textbf{MON}} & \textcolor{unibablueI}{\textbf{Invited Lecture}} & \textcolor{unibablueI}{\textbf{Room}}\\
 \hline
 \endhead
 \VertEntry{13:15 \qquad\quad $\vert$ \qquad 14:15} & \multicolumn{2}{p{6.5cm}|}{\textbf{S{\o}ren Asmussen}:} \\
@@ -153,7 +154,7 @@
 \vspace{-2em}
 \begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
 \hline
-\rowcolor{unibablueII} \textcolor{white}{\textbf{MON}} & \textcolor{white}{\textbf{Session 1: "Traffic Modeling, Inference and Estimation" Chair: TODO}} & \textcolor{white}{\textbf{Room}}\\
+\rowcolor{unibablueV} \textcolor{unibablueI}{\textbf{MON}} & \textcolor{unibablueI}{\textbf{Session 1: "Traffic Modeling, Inference and Estimation" Chair: TODO}} & \textcolor{unibablueI}{\textbf{Room}}\\
 \hline
 \endhead
  & \multicolumn{2}{p{6.5cm}|}{\textbf{Jan Kriege and Peter Buchholz}:} \\
@@ -169,7 +170,7 @@
 \vspace{-2em}
 \begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
 \hline
-\rowcolor{unibablueII} \textcolor{white}{\textbf{MON}} & \textcolor{white}{\textbf{Session 2: "Modeling and Analysis Techniques" Chair: TODO}} & \textcolor{white}{\textbf{Room}}\\
+\rowcolor{unibablueV} \textcolor{unibablueI}{\textbf{MON}} & \textcolor{unibablueI}{\textbf{Session 2: "Modeling and Analysis Techniques" Chair: TODO}} & \textcolor{unibablueI}{\textbf{Room}}\\
 \hline
 \endhead
  & \multicolumn{2}{p{6.5cm}|}{\textbf{R\"udiger Berndt, Petera Bazan, Kai-Steffen Hielscher and Reinhard German}:} \\
@@ -182,7 +183,7 @@
 \vspace{-2em}
 \begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
 \hline
-\rowcolor{unibablueII} \textcolor{white}{\textbf{TUE}} & \textcolor{white}{\textbf{Session 3: "Wireless Networks" Chair: TODO}} & \textcolor{white}{\textbf{Room}}\\
+\rowcolor{unibablueV} \textcolor{unibablueI}{\textbf{TUE}} & \textcolor{unibablueI}{\textbf{Session 3: "Wireless Networks" Chair: TODO}} & \textcolor{unibablueI}{\textbf{Room}}\\
 \hline
 \endhead
  & \multicolumn{2}{p{6.5cm}|}{\textbf{Ruslan Krenzler and Hans Daduna}:} \\
@@ -198,7 +199,7 @@
 \vspace{-2em}
 \begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
 \hline
-\rowcolor{unibablueII} \textcolor{white}{\textbf{TUE}} & \textcolor{white}{\textbf{Session 4: "Monitoring and Analysis of Protocols and Service Architectures" Chair: TODO}} & \textcolor{white}{\textbf{Room}}\\
+\rowcolor{unibablueV} \textcolor{unibablueI}{\textbf{TUE}} & \textcolor{unibablueI}{\textbf{Session 4: "Monitoring and Analysis of Protocols and Service Architectures" Chair: TODO}} & \textcolor{unibablueI}{\textbf{Room}}\\
 \hline
 \endhead
  & \multicolumn{2}{p{6.5cm}|}{\textbf{Gerhard Hasslinger and Konstantinos Ntougias}:} \\
@@ -217,7 +218,17 @@
 \vspace{-2em}
 \begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
 \hline
-\rowcolor{unibablueII} \textcolor{white}{\textbf{TUE}} & \textcolor{white}{\textbf{Session 5: "Reliable Software: Analysis and Testing" Chair: TODO}} & \textcolor{white}{\textbf{Room}}\\
+\rowcolor{unibayellowV} \textcolor{unibablueI}{\textbf{MON}} & \textcolor{unibablueI}{\textbf{Invited Lecture}} & \textcolor{unibablueI}{\textbf{Room}}\\
+\hline
+\endhead
+\VertEntry{13:45 \qquad\quad $\vert$ \qquad 14:45} & \multicolumn{2}{p{6.5cm}|}{\textbf{Jim Roberts}:} \\
+ & \multicolumn{2}{p{6.5cm}|}{On the performance of caching in information-centric networks} \\
+ \hline
+\end{longtable}
+\vspace{-2em}
+\begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
+\hline
+\rowcolor{unibablueV} \textcolor{unibablueI}{\textbf{TUE}} & \textcolor{unibablueI}{\textbf{Session 5: "Reliable Software: Analysis and Testing" Chair: TODO}} & \textcolor{unibablueI}{\textbf{Room}}\\
 \hline
 \endhead
  & \multicolumn{2}{p{6.5cm}|}{\textbf{Sven Kerschbaum, Kai-Steffen Hielscher, Reinhard German and Ulrich Klehmet}:} \\
@@ -230,7 +241,7 @@
 \vspace{-2em}
 \begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
 \hline
-\rowcolor{unibablueII} \textcolor{white}{\textbf{TUE}} & \textcolor{white}{\textbf{Session 6: "Tools" Chair: TODO}} & \textcolor{white}{\textbf{Room}}\\
+\rowcolor{unibagrayV} \textcolor{unibablueI}{\textbf{TUE}} & \textcolor{unibablueI}{\textbf{Session 6: "Tools" Chair: TODO}} & \textcolor{unibablueI}{\textbf{Room}}\\
 \hline
 \endhead
  & \multicolumn{2}{p{6.5cm}|}{\textbf{Alexander Gouberman, Martin Riedl, Markus Siegle and Christophe Grand}:} \\
@@ -246,7 +257,23 @@
 \vspace{-2em}
 \begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
 \hline
-\rowcolor{unibablueII} \textcolor{white}{\textbf{WED}} & \textcolor{white}{\textbf{Session 7: "Analysis and Simulation of Energy Efficiency" Chair: TODO}} & \textcolor{white}{\textbf{Room}}\\
+\rowcolor{unibagreenV} \textcolor{unibablueI}{\textbf{WED}} & \textcolor{unibablueI}{\textbf{Workshops}} & \\
+\hline
+\endhead
+ & \textbf{SOCNET 2014} & \\
+ & International Workshop on Modeling, Analysis and Management of Social Networks and their Applications & Room \\
+ \cline{2-3}
+\VertEntry{09:00 \qquad\quad $\vert$ \qquad 13:00} & \textbf{FGENET 2014} & \\
+&  International Workshop on Demand Modeling and Quantitative Analysis of Future Generation Energy Networks and Energy Efficient Systems & Room \\
+ \cline{2-3}
+ & \textbf{WoNeCa 2014} & \\
+ & 2nd Workshop on Network Calculus & Room \\
+ \hline
+\end{longtable}
+\vspace{-2em}
+\begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
+\hline
+\rowcolor{unibablueV} \textcolor{unibablueI}{\textbf{WED}} & \textcolor{unibablueI}{\textbf{Session 7: "Analysis and Simulation of Energy Efficiency" Chair: TODO}} & \textcolor{unibablueI}{\textbf{Room}}\\
 \hline
 \endhead
  & \multicolumn{2}{p{6.5cm}|}{\textbf{Ibrahim Alag\"oz, Christoffer L\"offler, Vitali Schneider and Reinhard German}:} \\
@@ -260,26 +287,26 @@
 \normalsize
 
 \newpage
-%\section{Hotel Info}
-%The Hotel for the conference is the Comfort Inn located at:
-%1305 Tiger Blvd.
-%US 123 \& 76
-%Clemson, SC 29631
-%(Phone: (864) 653-3600).
-%
-%%\includegraphics[scale=0.90]{hotel_map.eps}
-%\section{Parking}
-%Visitors \underline{\bf must} display a valid guest parking permit to
-%park on campus except when in areas designated as public parking for a
-%special event.
-%
-%
-%We have parking permits that allow you to park in green and orange
-%marked parking. There is such parking between Sikes (the building on
-%Calhoun with columns) and Martin Hall, enter along Calhoun Drive and
-%turn right after Sikes (NOT Cherry Road). You may get permits on Friday
-%from Martin Schmoll personally (office number Martin O-17), or pick it
-%up at the conference from room Martin M-105 (Saturday \& Sunday).
+\section{Hotel Info}
+The Hotel for the conference is the Comfort Inn located at:
+1305 Tiger Blvd.
+US 123 \& 76
+Clemson, SC 29631
+(Phone: (864) 653-3600).
+
+%\includegraphics[scale=0.90]{hotel_map.eps}
+\section{Parking}
+Visitors \underline{\bf must} display a valid guest parking permit to
+park on campus except when in areas designated as public parking for a
+special event.
+
+
+We have parking permits that allow you to park in green and orange
+marked parking. There is such parking between Sikes (the building on
+Calhoun with columns) and Martin Hall, enter along Calhoun Drive and
+turn right after Sikes (NOT Cherry Road). You may get permits on Friday
+from Martin Schmoll personally (office number Martin O-17), or pick it
+up at the conference from room Martin M-105 (Saturday \& Sunday).
 %
 %
 %Parking permits for visitors can also be obtained from three locations:
@@ -323,6 +350,8 @@
 %Martin Schmoll \url{<schmoll@clemson.edu>}
 %
 %Predrag Puno\v{s}evac \url{<ppunosev@aug.edu>}
+\cleardoublepage
+\newpage
 
 \newpage
 \section{Sponsors}
