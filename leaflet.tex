@@ -2,38 +2,67 @@
 
 \input{config/commands}
 
-\title{\bf MMB \& DFT 2014}
+
+\title{MMB \& DFT 2014}
 
 \author{%
-\Large \bf University of Bamberg
+\Large University of Bamberg
 %  Martin Schmoll\\
 %  Predrag Puno\v{s}evac
 }
-\date{\bf March 17 -- 19, 2014 }
+\date{March 17 -- 19, 2014 }
 
-\CutLine*{1}
-\CutLine*{6}
+%\CutLine*{1}
+%\CutLine*{6}
 
-%\AddToBackground{1}{%  Background of a small page
-%  \put(0,0){\textcolor{Cerulean}{\rule{\paperwidth}{\paperheight}}}}
+\AddToBackground*{1}{%  Background of a large page
+  \put(0,0){\includegraphics{images/bg1.pdf}{\rule{\paperwidth}{\paperheight}}}}
+  
+\AddToBackground*{2}{%  Background of a large page
+  \put(0,0){\includegraphics{images/bg2.pdf}{\rule{\paperwidth}{\paperheight}}}}
 
 
 %\AddToBackground{1}{%  Background of a small page
 %  \put(115,530){\includegraphics[scale=0.12]{tiger.eps}}}
 
 
-\AddToBackground{6}{%  Background of a small page
-  \put(0,0){\textcolor{unibablueV}{\rule{\paperwidth}{\paperheight}}}}
+%\AddToBackground{6}{%  Background of a small page
+%  \put(0,0){\textcolor{unibablueV}{\rule{\paperwidth}{\paperheight}}}}
 
 
 %\AddToBackground*{2}{% Background of a large page
 %  \put(\LenToUnit{.5\paperwidth},\LenToUnit{.5\paperheight}){%
 %    \makebox(0,0)[c]{%
 %      \resizebox{.9\paperwidth}{!}{\rotatebox{35.26}{%
-%        \textsf{\textbf{\textcolor{LIGHTGRAY}{CLEMSON}}}}}}}}
+%        \textsf{\textbf{\textcolor{LIGHTGRAY}{University of Bamberg}}}}}}}}
 
+
+\makeatletter
+\def\maketitle{%
+\null
+  \thispagestyle{empty}%
+  \vspace{9em}
+ \begin{minipage}{.05\textwidth}
+ \hfill
+ \end{minipage}
+ \begin{minipage}{.9\textwidth}
+  \begin{flushleft}\leavevmode
+    \normalfont
+    {\LARGE\sf\bf\it \textcolor{white}{\@title}\par}%
+    \vskip .5em
+    {\Large\sf\bf\it \textcolor{white}{\@author}\par}%
+    \vskip .5em
+    {\Large\sf\bf\it \textcolor{white}{\@date}\par}%
+  \end{flushleft}%
+  \hfill
+   \end{minipage}
+  %\vfill
+  \null
+  }
+\makeatother
 
 \begin{document}
+
 \maketitle
 
 \newpage
