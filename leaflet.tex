@@ -5,25 +5,17 @@
 
 \title{MMB \& DFT 2014}
 
-\author{%
-\Large University of Bamberg
-%  Martin Schmoll\\
-%  Predrag Puno\v{s}evac
-}
+\author{University of Bamberg}
 \date{March 17 -- 19, 2014 }
 
 %\CutLine*{1}
 %\CutLine*{6}
-
+  
 \AddToBackground*{1}{%  Background of a large page
   \put(0,0){\includegraphics{images/bg1.pdf}{\rule{\paperwidth}{\paperheight}}}}
   
 \AddToBackground*{2}{%  Background of a large page
   \put(0,0){\includegraphics{images/bg2.pdf}{\rule{\paperwidth}{\paperheight}}}}
-
-
-%\AddToBackground{1}{%  Background of a small page
-%  \put(115,530){\includegraphics[scale=0.12]{tiger.eps}}}
 
 
 %\AddToBackground{6}{%  Background of a small page
@@ -37,23 +29,27 @@
 %        \textsf{\textbf{\textcolor{LIGHTGRAY}{University of Bamberg}}}}}}}}
 
 
+
+
+
 \makeatletter
 \def\maketitle{%
+
 \null
   \thispagestyle{empty}%
-  \vspace{9em}
+  \vfill
+  
  \begin{minipage}{.05\textwidth}
  \hfill
  \end{minipage}
  \begin{minipage}{.9\textwidth}
-  \begin{flushleft}\leavevmode
-    \normalfont
-    {\LARGE\sf\bf\it \textcolor{white}{\@title}\par}%
+  \begin{center}
+    {\Huge\sf \textcolor{unibablueI}{\@title}\par}%
     \vskip .5em
-    {\Large\sf\bf\it \textcolor{white}{\@author}\par}%
+    {\Large\sf \textcolor{unibablueI}{\@author}\par}%
     \vskip .5em
-    {\Large\sf\bf\it \textcolor{white}{\@date}\par}%
-  \end{flushleft}%
+    {\Large\sf \textcolor{unibablueI}{\@date}\par}%
+  \end{center}%
   \hfill
    \end{minipage}
   %\vfill
@@ -61,6 +57,7 @@
   }
 \makeatother
 
+\renewcommand\familydefault{\sfdefault}
 \begin{document}
 
 \maketitle
@@ -156,7 +153,7 @@
 \node[hours, minimum height = 23mm, fill=white] (lb2) at($(1300.west)+(we.north west)+(0,.5)$) {Lunch Break};
 \node[hours, minimum height = 15mm, fill=unibablueV] (s7) [below = of lb2] {Session 7};
 \node[hours, minimum height = 7mm, fill=white] (cb7) [below = of s7] {Coffee Break};
-\node[hours, minimum height = 7mm, fill=white] (ma) [below = of cb7] {MMB Awards};
+\node[hours, minimum height = 7mm, fill=unibaredV] (ma) [below = of cb7] {MMB Awards};
 \node[hours, minimum height = 15mm, fill=white] (cs) [below = of ma] {Closing Session};
 \end{tikzpicture}
 
@@ -312,6 +309,13 @@
  & \multicolumn{2}{p{6.5cm}|}{Performance of LTE for Smart Grid Communications} \\
  \hline
 \end{longtable}
+\vspace{-2em}
+\begin{longtable}{|p{2em}|p{5.5cm}|p{1cm}|}
+\hline
+\rowcolor{unibaredV} \textcolor{unibablueI}{\textbf{WED}} & \textcolor{unibablueI}{\textbf{MMB Awards} Chair: TODO} & \textcolor{unibablueI}{\textbf{Room}}\\
+\hline
+\endhead
+\end{longtable}
 
 \normalsize
 
@@ -319,13 +323,18 @@
 \section{Location Info}
 
 \begin{center}
-\begin{tikzpicture}[yscale=-0.1, xscale=0.1, node distance=1mm,outer sep = 0pt]
+\begin{tikzpicture}[yscale=-0.1, xscale=0.1, node distance=1mm,inner sep = 0pt, outer sep = 0pt]
 \tikzset{grid/.style={gray,very thin,opacity=1}}
-\tikzstyle{default}=[anchor=center,draw=red, fill=unibablueI]
+\tikzstyle{default}=[anchor=center,draw=red]
     
 %\draw[grid] (0,0) grid (10*\textwidth,10*\textheight);
-\node[default] at (30,10) {
-        \includegraphics[width=.8\textheight, angle=90]{images/plan.png}
+\node[default](p1) at (30,10) {
+          \includegraphics[width=\textwidth]{images/map.png}
+      
+    };
+\node[fill=unibagrayV, inner sep=1pt, outer sep=1pt, anchor=south east](cr) at (p1.south east){\scriptsize \textcopyright {OpenStreetMap} contributors};    
+    \node[default] (p2) [below=of p1] {
+         \includegraphics[width=\textwidth]{images/plan.png} % angle=90
     };
 \end{tikzpicture}
 \end{center}
