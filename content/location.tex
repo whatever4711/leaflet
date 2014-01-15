@@ -1,0 +1,34 @@
+\section{\textcolor{unibablueI}{Location Info}}
+
+\begin{center}
+\begin{tikzpicture}[yscale=-0.1, xscale=0.1, node distance=1mm,inner sep = 0pt, outer sep = 0pt]
+\tikzset{grid/.style={gray,very thin,opacity=1}}
+\tikzstyle{default}=[anchor=north west,draw=red]
+    
+%\draw[grid] (0,0) grid (10*\textwidth,10*\textheight);
+\node[default](p1) at (0,0) {
+          \includegraphics[width=\textwidth]{images/map2.png}
+      
+    };
+\node[fill=unibagrayV, inner sep=1pt, outer sep=1pt, anchor=south east](cr) at (p1.south east){\scriptsize \textcopyright {OpenStreetMap} contributors};    
+    \node[default] (p2) [below=of p1] {
+         \includegraphics[width=\textwidth]{images/plan.png} % angle=90
+    };
+
+%\draw[grid] (0,0) grid (10*\textwidth,6*\textheight);
+\draw[ultra thick, unibaredI](46,21) circle (4cm);
+\draw[ultra thick, unibablueII](41.5,59.5) circle (2cm);
+\draw[ultra thick, unibablueII](30.3,53.6) circle (2cm);
+\end{tikzpicture}
+\end{center}
+
+\subsection{\textcolor{unibablueI}{Means of Transport}}
+\textbf{\textcolor{unibablueII}{Public transport (ÖPNV):}}\\
+Bus stop ``Spinnerei'' (line 906, 938)\\
+\textbf{\textcolor{unibablueII}{Parking:}}\\
+underground garage beneath the university building
+
+\subsection{\textcolor{unibablueI}{Contact}}
+An der Weberei 5\\
+96047 Bamberg\\[2ex]
+web: www.mmb2014.de

@@ -1,0 +1,41 @@
+\documentclass[a4paper,10pt,foldmark,notumble]{leaflet}
+
+\input{config/commands}
+
+
+\title{International Workshops of the MMB \& DFT 2014}
+
+\author{University of Bamberg}
+\date{March 19, 2014 }
+
+%\CutLine*{1}
+%\CutLine*{6}
+  
+\AddToBackground*{1}{%  Background of a large page
+  \put(0,0){\includegraphics{images/bg1.pdf}{\rule{\paperwidth}{\paperheight}}}}
+  
+\AddToBackground*{2}{%  Background of a large page
+  \put(0,0){\includegraphics{images/bg2.pdf}{\rule{\paperwidth}{\paperheight}}}}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+\input{content/timetableWorkshops}
+%
+\newpage
+\input{content/programWorkshops}
+
+\newpage
+\input{content/location}
+
+
+\cleardoublepage
+\newpage
+
+\newpage
+\input{content/sponsors}
+
+
+\end{document}
