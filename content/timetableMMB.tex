@@ -35,8 +35,8 @@
 \node[hour] (1010) [below = \hourseparation of 0900] {10:10};
 \node[hour] (1040) [below = \hourseparation of 1010] {10:40};
 \node[hour] (1215) [below = \hourseparation of 1040] {12:15};
-\node[hour] (1300) [below = \hourseparation of 1215] {13:00};
-\node[hour] (1315) [below = \hourseparation of 1300] {13:15};
+\node[hour] (1310) [below = \hourseparation of 1215] {13:10};
+\node[hour] (1315) [below = \hourseparation of 1310] {13:15};
 \node[hour] (1345) [below = \hourseparation of 1315] {13:45};
 \node[hour] (1415) [below = \hourseparation of 1345] {14:15};
 \node[hour] (1445) [below = \hourseparation of 1415] {14:45};
@@ -55,7 +55,7 @@
 \node[hour] (2230) [below = \hourseparation of 2100] {22:30};
 %
 % Monday
-\node[hours, minimum height = 7mm, fill=white] (os) at($(1300.west)+(mo.north west)+(0,.5)$) {Opening Session};
+\node[hours, minimum height = 7mm, fill=white] (os) at($(1310.west)+(mo.north west)+(0,.5)$) {Opening Session};
 \node[hours, minimum height = 15mm, fill=unibayellowV] (il1) [below = of os] {Invited Lecture\\ S{\o}ren Asmussen};
 \node[hours, minimum height = 7mm, fill=white] (cb1) [below = of il1] {Coffee Break};
 \node[hours, minimum height = 31mm, fill=unibablueV] (s1) [below = of cb1] {Session 1};
@@ -85,7 +85,7 @@
 %\node[hhours, minimum height = 31mm, fill=white] (so) at($(0900.west)+(we.north west)+(0,.5)$) {\scriptsize SOCNET 2014};
 %\node[hhours, minimum height = 31mm, fill=white] (fg) at($(0900.west)+(we.north west)+(12.5,.5)$) {\scriptsize FGENET 2014};
 \node[hours, minimum height = 31mm, fill=unibagreenV] (so) at($(0900.west)+(we.north west)+(0,.5)$) {\footnotesize Workshops\\[3ex] \footnotesize SOCNET\\[1ex] \footnotesize FGENET\\[1ex] \footnotesize WoNeCa (-- 16:00)};
-\node[hours, minimum height = 23mm, fill=white] (lb2) at($(1300.west)+(we.north west)+(0,.5)$) {Lunch Break};
+\node[hours, minimum height = 23mm, fill=white] (lb2) at($(1310.west)+(we.north west)+(0,.5)$) {Lunch Break};
 \node[hours, minimum height = 15mm, fill=unibablueV] (s7) [below = of lb2] {Session 7};
 \node[hours, minimum height = 7mm, fill=white] (cb7) [below = of s7] {Coffee Break};
 \node[hours, minimum height = 7mm, fill=unibaredV] (ma) [below = of cb7] {MMB Awards};
