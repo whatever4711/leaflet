@@ -20,18 +20,18 @@
 
 \node[default] at (0,0){};
 %\draw[grid] (0,0) grid (10*\textwidth,10*\textheight);
+%
+%\node[default] (pic) at (14,69) {
+%        \includegraphics[width=1.11\textwidth, angle=90]{images/altenburg.jpg}
+%    };    
+%
+%\coordinate (A) at ($(pic.south west)-(0,80)$);
+%\coordinate (B) at ($(pic.south east) + (0,15)$);
+%\coordinate (C) at ($(A)!0.5!(B)$);
 
-\node[default] (pic) at (14,69) {
-        \includegraphics[width=1.11\textwidth, angle=90]{images/altenburg.jpg}
-    };    
+%\draw[fill=unibayellowV,draw=none] (A) rectangle (B);
 
-\coordinate (A) at ($(pic.south west)-(0,80)$);
-\coordinate (B) at ($(pic.south east) + (0,15)$);
-\coordinate (C) at ($(A)!0.5!(B)$);
-
-\draw[fill=unibayellowV,draw=none] (A) rectangle (B);
-
-\node[title] at(C)  {\Huge MMB \& DFT 2014 \\ University of Bamberg \\ March 17 -- 19, 2014} ;
+\node[title] at(120,340)  {\Huge MMB \& DFT 2014 \\ University of Bamberg \\ March 17 -- 19, 2014} ;
 \end{tikzpicture}
 
 \enlargethispage{2ex}
