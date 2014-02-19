@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thema: Poster
+% Autor: Musterman
+% Datum: 12.05
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\documentclass[a3,portrait]{a0poster}
+
+\input{config/commandsPoster}
+
+
+\begin{document}
+\AddToShipoutPicture{\BackgroundPic}
+
+
+\begin{tikzpicture}[yscale=-0.1, xscale=0.1, node distance=1mm,inner sep = 0pt, outer sep = 0pt]
+\tikzset{grid/.style={gray,very thin,opacity=1}}
+\tikzstyle{default}=[anchor=north west]
+\tikzstyle{title}=[inner sep=0pt, outer sep=0pt, anchor=center,unibablueI, align=center, font=\Large]
+
+\node[default] at (0,0){};
+%\draw[grid] (0,0) grid (10*\textwidth,10*\textheight);
+
+\node[default] (pic) at (14,69) {
+        \includegraphics[width=1.11\textwidth, angle=90]{images/altenburg.jpg}
+    };    
+
+\coordinate (A) at ($(pic.south west)-(0,80)$);
+\coordinate (B) at ($(pic.south east) + (0,15)$);
+\coordinate (C) at ($(A)!0.5!(B)$);
+
+\draw[fill=unibayellowV,draw=none] (A) rectangle (B);
+
+\node[title] at(C)  {\Huge MMB \& DFT 2014 \\ University of Bamberg \\ March 17 -- 19, 2014} ;
+\end{tikzpicture}
+
+\enlargethispage{2ex}
+\end{document}
