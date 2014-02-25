@@ -12,14 +12,97 @@
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
 
+%\begin{center}
+% \begin{tikzpicture}[yscale=-0.1, xscale=0.1, node distance=3mm,outer sep = 0pt, inner sep=0pt]
+%\tikzset{grid/.style={gray,very thin,opacity=1}}
+%\tikzstyle{default}=[anchor=north west]
+%%\tikzstyle{bg}=[fill=unibayellowV, opacity=.75, anchor=north west]    
+%
+%%\draw[bg, rounded corners] (0,0) rectangle (10*\textwidth,21);
+%%\draw[grid] (0,0) grid (10*\textwidth,3*\textheight);
+%\node[default] (gi) at (2,2) {
+%        \includegraphics[width=.2\textwidth]{images/gi.png}
+%    };
+%\node[default] (itg) [right=of gi] {
+%        \includegraphics[width=.25\textwidth]{images/itg.png}
+%    };
+%\node[default] (dft) [right=of itg] {
+%        \includegraphics[width=.2\textwidth]{images/dft.png}
+%    };
+%\node[default] (mmb) [right=of dft] {
+%        \includegraphics[width=.2\textwidth]{images/mmb.png}
+%    };
+%\node[default] (springer) at (7,25) {
+%        \includegraphics[width=.4\textwidth]{images/springer.png}
+%    };
+%\node[default] (tao) [right=of springer] {
+%        \includegraphics[width=.5\textwidth]{images/tao.png}
+%    };
+%\end{tikzpicture} 
+% \end{center}
+% 
+% \begin{center}
+%\begin{tikzpicture}[yscale=-0.1, xscale=0.1, node distance=5mm,outer sep = 0pt]
+%\tikzset{grid/.style={gray,very thin,opacity=1}}
+%\tikzstyle{default}=[anchor=center]
+%    
+%%\draw[grid] (0,0) grid (10*\textwidth,10*\textheight);
+%\node[default] (insius) at (30,10) {
+%        \includegraphics[width=.6\textwidth]{images/insius.png}
+%    };
+%\node[default] (sterhard) [below=of insius] {
+%        \includegraphics[width=.6\textwidth]{images/sterhard.png}
+%    };
+%\end{tikzpicture}
+%\end{center}
+
 
 \begin{tikzpicture}[yscale=-0.1, xscale=0.1, node distance=1mm,inner sep = 0pt, outer sep = 0pt]
 \tikzset{grid/.style={gray,very thin,opacity=1}}
-\tikzstyle{default}=[anchor=north west]
+\tikzstyle{default}=[anchor=north west, font=\small]
 \tikzstyle{title}=[inner sep=0pt, outer sep=0pt, anchor=center,unibablueI, align=center, font=\Large]
+
+\tikzstyle{bg}=[fill=unibayellowV, opacity=.75, anchor=north west]    
+%
 
 \node[default] at (0,0){};
 %\draw[grid] (0,0) grid (10*\textwidth,10*\textheight);
+\coordinate (bg1) at (150,55);
+\coordinate (bg2) at (260,305);
+\draw[bg, rounded corners] (bg1) rectangle (bg2);
+
+\coordinate (co) at (165,80);
+
+\node[default] (gi) at (co) {
+        \includegraphics[width=2cm]{images/gi.png}
+    };
+\node[default] (itg) [right=of gi] {
+        \includegraphics[width=2cm]{images/itg.png}
+    };
+\node[default] (dft) [right=of itg] {
+        \includegraphics[width=2cm]{images/dft.png}
+    };
+\node[default] (mmb) [right=of dft] {
+        \includegraphics[width=2cm]{images/mmb.png}
+    };
+\node[default] (coop) [above=7mm of itg.north east] {\textcolor{unibablueI}{In Cooperation with} };
+\node[default] (springer)[below=7mm of gi.south east] {
+        \includegraphics[width=4.1cm]{images/springer.png}
+    };
+\node[default] (tao) [right=of springer] {
+        \includegraphics[width=4cm]{images/tao.png}
+    };
+    
+\coordinate (spo) at (165,280);
+
+\node[default] (insius) at (spo) {
+        \includegraphics[width=4cm]{images/insius.png}
+    };
+\node[default] (sterhard) [right=7mm of insius] {
+        \includegraphics[width=4cm]{images/sterharddark.png}
+    };
+\node[default] (coop) [above=7mm of insius.north east] {\textcolor{unibablueI}{Sponsored by} };
+
 %
 %\node[default] (pic) at (14,69) {
 %        \includegraphics[width=1.11\textwidth, angle=90]{images/altenburg.jpg}
@@ -31,7 +114,7 @@
 
 %\draw[fill=unibayellowV,draw=none] (A) rectangle (B);
 
-\node[title] at(120,340)  {\Huge MMB \& DFT 2014 \\ University of Bamberg \\ March 17 -- 19, 2014} ;
+\node[title] at(120,343)  {\Huge MMB \& DFT 2014 \\ University of Bamberg \\ March 17 -- 19, 2014} ;
 \end{tikzpicture}
 
 \enlargethispage{2ex}
