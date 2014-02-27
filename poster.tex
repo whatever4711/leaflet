@@ -93,15 +93,21 @@
         \includegraphics[width=4cm]{images/tao.png}
     };
     
-\coordinate (spo) at (165,280);
+\coordinate (spo) at (165,270);
 
-\node[default] (insius) at (spo) {
+\node[default] (centron) at (spo) {
+        \includegraphics[width=4cm]{images/centron.png}
+    };
+\node[default] (insius) [right=7mm of centron] {
         \includegraphics[width=4cm]{images/insius.png}
     };
-\node[default] (sterhard) [right=7mm of insius] {
+\node[default] (sterhard) [below=7mm of centron] {
         \includegraphics[width=4cm]{images/sterharddark.png}
     };
-\node[default] (coop) [above=7mm of insius.north east] {\textcolor{unibablueI}{Sponsored by} };
+\node[default] (grossmann) [right=7mm of sterhard] {
+        \includegraphics[width=4cm]{images/grossmann.png}
+    };
+\node[default] (coop) [above=7mm of centron.north east] {\textcolor{unibablueI}{Sponsored by} };
 
 %
 %\node[default] (pic) at (14,69) {
