@@ -34,9 +34,9 @@
 %   
 %\draw[grid] (0,0) grid (10*\textwidth,10*\textheight);
 %
-\node[day] (so) at (9,0) {SOCNET};
-\node[day] (fg) [right = of so] {FGENET};
-\node[day] (wo) [right = of fg] {WoNeCa};
+\node[day] (fg) at (9,0) {FGENET};
+\node[day] (so) [right = of fg] {SOCNET};
+\node[day] (wo) [right = of so] {WoNeCa};
 %
 \node[hour] (0830) at (0,7) {08:30};
 \node[hour] (0845) [below = \hourseparation of 0830] {08:45};
@@ -68,7 +68,7 @@
 \node[hours, minimum height = \oneslot, fill=white] (socb2) [below = of sos1] {Coffee Break};
 \node[hours, minimum height = \threeslots, fill=unibablueV] (sos2) [below = of socb2] {Session 2};
 \node[hours, minimum height = \twoslots, fill=white] (solb) [below = of sos2] {Lunch Break};
-\node[hours, minimum height = \threeslots, fill=unibayellowV] (soil2) [below = of solb] {\scriptsize Invited Lecture\\ P.A. Gloor};
+\node[hours, minimum height = \threeslots, fill=unibayellowV] (soil2) [below = of solb] {Invited Lecture\\ P.A. Gloor};
 \node[hours, minimum height = \oneslot, fill=white] (socs) [below = of soil2] {Closing Session};
 
 % FGENET
@@ -84,7 +84,7 @@
 \node[hours, minimum height = \twoslots, fill=unibablueV] (wos1) [below = of woop] {Session 1};
 \node[hours, minimum height = \twoslots, fill=white] (wocb1) [below = of wos1] {Coffee Break};
 \node[hours, minimum height = \oneslot, fill=unibablueV] (wos2) [below = of wocb1] {Session 2};
-\node[hours, minimum height = \threeslots, fill=unibayellowV] (wok) [below = of wos2] {\scriptsize Keynote\\ J. Liebeherr};
+\node[hours, minimum height = \threeslots, fill=unibayellowV] (wok) [below = of wos2] {Keynote\\ J. Liebeherr};
 \node[hours, minimum height = \threeslots, fill=white] (wolb) [below = of wok] {Lunch Break};
 \node[hours, minimum height = \twoslots, fill=unibablueV] (wos3) [below = of wolb] {Session 3};
 \node[hours, minimum height = \oneslot, fill=white] (wocb2) [below = of wos3] {Coffee Break};
