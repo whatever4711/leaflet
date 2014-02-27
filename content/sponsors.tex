@@ -19,10 +19,14 @@
 \node[default] (mmb) [right=of dft] {
         \includegraphics[width=.2\textwidth]{images/mmb.png}
     };
-\node[default] (springer) at (7,25) {
-        \includegraphics[width=.4\textwidth]{images/springer.png}
-    };
-\node[default] (tao) [right=of springer] {
+\ifthenelse{\boolean{conference}}{
+\node[default] (press) at (7,25) {
+        \includegraphics[width=.4\textwidth]{images/springer.png}};
+        }{
+\node[default] (press) at (7,25) {
+        \includegraphics[width=.4\textwidth]{images/ubp.png}};    
+}
+\node[default] (tao) [right=of press] {
         \includegraphics[width=.5\textwidth]{images/tao.png}
     };
 \end{tikzpicture} 

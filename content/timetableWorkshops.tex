@@ -57,8 +57,8 @@
 \node[hour] (1500) [below = \hourseparation of 1435] {15:00};
 \node[hour] (1515) [below = \hourseparation of 1500] {15:15};
 \node[hour] (1520) [below = \hourseparation of 1515] {15:20};
-\node[hour] (1600) [below = \hourseparation of 1520] {16:00};
-\node[hour] (1640) [below = \hourseparation of 1600] {16:40};
+%\node[hour] (1600) [below = \hourseparation of 1520] {16:00};
+\node[hour] (1640) [below = \hourseparation of 1520] {16:40};
 \node[hour] (1645) [below = \hourseparation of 1640] {16:45};
 
 % SOCNET
@@ -88,7 +88,7 @@
 \node[hours, minimum height = \threeslots, fill=white] (wolb) [below = of wok] {Lunch Break};
 \node[hours, minimum height = \twoslots, fill=unibablueV] (wos3) [below = of wolb] {Session 3};
 \node[hours, minimum height = \oneslot, fill=white] (wocb2) [below = of wos3] {Coffee Break};
-\node[hours, minimum height = \fourslots, fill=unibablueV] (wos4) [below = of wocb2] {Session 4};
+\node[hours, minimum height = \threeslots, fill=unibablueV] (wos4) [below = of wocb2] {Session 4};
 \node[hours, minimum height = \oneslot, fill=white] (wocl) [below = of wos4] {Closing Session};
 
 \end{tikzpicture}
