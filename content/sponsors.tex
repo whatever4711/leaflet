@@ -36,7 +36,11 @@
 \tikzstyle{default}=[anchor=center]
     
 %\draw[grid] (0,0) grid (10*\textwidth,10*\textheight);
-\node[default] (insius) at (30,10) {
+\node[default] (centron) at (30,10) {
+        \includegraphics[width=.6\textwidth]{images/centron.png}
+    };
+
+\node[default] (insius) [below=of centron] {
         \includegraphics[width=.6\textwidth]{images/insius.png}
     };
 \node[default] (sterhard) [below=of insius] {

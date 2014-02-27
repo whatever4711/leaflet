@@ -9,6 +9,7 @@
 \newcommand{\fourslots}{27mm}
 \newcommand{\fiveslots}{34mm}
 \newcommand{\sixslots}{41mm}
+\newcommand{\sevenslots}{48mm}
 %
 \newcommand{\hourseparation}{3mm}
 %
@@ -38,7 +39,8 @@
 \node[day] (tu) [right = of mo] {Tuesday};
 \node[day] (we) [right = of tu] {Wednesday};
 %
-\node[hour] (0900) at (0,7) {09:00};
+\node[hour] (0830) at (0,7) {08:30};
+\node[hour] (0900) [below = \hourseparation of 0830] {09:00};
 \node[hour] (1000) [below = \hourseparation of 0900] {10:00};
 \node[hour] (1030) [below = \hourseparation of 1000] {10:30};
 \node[hour] (1100) [below = \hourseparation of 1030] {11:00};
@@ -94,7 +96,7 @@
 %% Wednesday
 %%\node[hhours, minimum height = 31mm, fill=white] (so) at($(0900.west)+(we.north west)+(0,.5)$) {\scriptsize SOCNET 2014};
 %%\node[hhours, minimum height = 31mm, fill=white] (fg) at($(0900.west)+(we.north west)+(12.5,.5)$) {\scriptsize FGENET 2014};
-\node[hours, minimum height = \sixslots, fill=unibagreenV] (so) at($(0900.west)+(we.north west)+(0,.5)$) {\footnotesize Workshops\\[3ex] \footnotesize \footnotesize FGENET\\[1ex] SOCNET (-- 15:20)\\[1ex]  \footnotesize WoNeCa (-- 16:00)};
+\node[hours, minimum height = \sevenslots, fill=unibagreenV] (so) at($(0830.west)+(we.north west)+(0,.5)$) {\footnotesize Workshops\\[3ex] \footnotesize \footnotesize FGENET \textit{09:00 -- 13:15}\\[1ex] SOCNET \textit{09:00 -- 15:20}\\[1ex]  \footnotesize WoNeCa \textit{08:30 -- 16:45}};
 \node[hours, minimum height = \oneslot, fill=white] (lb2) at($(1315.west)+(we.north west)+(0,.5)$) {Lunch Break};
 \node[hours, minimum height = \twoslots, fill=unibablueV] (s7) [below = of lb2] {Session 7};
 \node[hours, minimum height = \oneslot, fill=white] (cb7) [below = of s7] {Coffee Break};
