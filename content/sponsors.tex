@@ -56,3 +56,15 @@
 \end{tikzpicture}
 \end{center}
 
+\vfill
+\begin{center}
+\begin{tikzpicture}[yscale=-0.1, xscale=0.1, node distance=1mm,outer sep = 0pt]
+\tikzset{grid/.style={gray,very thin,opacity=1}}
+\tikzstyle{default}=[anchor=center]
+
+\node[default] (qr) at (0,0) {
+        \includegraphics[width=.2\textwidth]{images/qrcode.png}
+    };
+\node[default, unibablueI] (url) [below=of qr]{\url{www.mmb2014.de}};
+\end{tikzpicture}
+\end{center}
